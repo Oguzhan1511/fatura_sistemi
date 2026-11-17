@@ -24,3 +24,8 @@ lab_models/paddlex/*
 !lab_models/paddlex/official_models/
 **/.cache/
 *.partial
+
+# Üretim sırları örnekte bulunmaz; kilit yalnızca çalışma anında kullanılır.
+!.env.coolify.example
+.instance.lock
+backups/

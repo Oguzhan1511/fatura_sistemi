@@ -1,5 +1,7 @@
 # Ayrı OCR ortamı; Qwen/MLX ana sistem için gerekli değildir.
-paddlepaddle==3.2.0
+# Mac ve Intel/AMD kurulumları önceki sürümde kalır; ARM Linux hata düzeltmesini alır.
+paddlepaddle==3.2.0; sys_platform != "linux" or (platform_machine != "aarch64" and platform_machine != "arm64")
+paddlepaddle==3.2.2; sys_platform == "linux" and (platform_machine == "aarch64" or platform_machine == "arm64")
 paddleocr==3.3.2
 pdfplumber==0.11.10
 Pillow==13.0.0

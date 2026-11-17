@@ -197,7 +197,9 @@ class Application:
             )
 
 
-class Handler(BaseHTTPRequestHandler):
+class InvoiceEndpoints:
+    """Yerel HTTP ve üretim WSGI katmanlarının paylaştığı fatura işlemleri."""
+
     server_version = "FaturaLocal/1.0"
 
     @property
@@ -439,6 +441,10 @@ class Handler(BaseHTTPRequestHandler):
                 )
                 return self.send(200, saved)
         raise FileNotFoundError("İşlem bulunamadı.")
+
+
+class Handler(InvoiceEndpoints, BaseHTTPRequestHandler):
+    """Bilgisayardaki mevcut yerel başlatıcı için HTTP taşıma katmanı."""
 
 
 def create_server(port=8765, data_root=None, reader="paddle"):

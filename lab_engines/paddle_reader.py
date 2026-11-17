@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import os
+import platform
 import re
 
 from invoice import number
@@ -39,6 +40,18 @@ class PaddleBackend:
     def __init__(self):
         from paddleocr import PaddleOCR
 
+        # ARM Linux'ta çok iş parçacıklı tahmin native süreç çökmesine yol açabilir.
+        # Mac'teki mevcut ayar korunur; sunucuda çekirdek sayısı açıkça sınırlanabilir.
+        arm_linux = platform.system() == "Linux" and platform.machine() in (
+            "aarch64",
+            "arm64",
+        )
+        cpu_threads = int(
+            os.environ.get("FATURA_OCR_CPU_THREADS", "1" if arm_linux else "10")
+        )
+        if not 1 <= cpu_threads <= 32:
+            raise ValueError("FATURA_OCR_CPU_THREADS 1–32 aralığında olmalı.")
+        self.cpu_threads = cpu_threads
         self.engine = PaddleOCR(
             lang="tr",
             ocr_version="PP-OCRv5",
@@ -49,6 +62,7 @@ class PaddleBackend:
             use_textline_orientation=False,
             device="cpu",
             enable_mkldnn=False,
+            cpu_threads=cpu_threads,
         )
 
     def recognize(self, image):
@@ -211,6 +225,7 @@ class PaddleBackend:
                 model_name="latin_PP-OCRv5_mobile_rec",
                 device="cpu",
                 enable_mkldnn=False,
+                cpu_threads=self.cpu_threads,
             )
         results = list(
             self.quantity_recognizer.predict([np.array(padded), np.array(enlarged)])

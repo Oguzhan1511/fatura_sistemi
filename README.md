@@ -1,3 +1,7 @@
+# Ubuntu / Coolify dağıtımı
+
+Coolify için [COOLIFY.md](COOLIFY.md) adımlarını izleyin. Kökteki Dockerfile, kimlik doğrulamalı üretim sunucusunu başlatır. İlk deploy'dan önce mevcut verileri kalıcı diske aktarın; iç ağ uygulama adresini ve yönetici parolasını Coolify runtime ortamında tanımlayın.
+
 # Fatura Sistemi — başka bilgisayara aktarım
 
 Yeni bilgisayarda kurulum için **[TASIMA.md](TASIMA.md)** dosyasını izleyin. Python 3.12 ile `Kurulum.bat` (Windows) veya `Kurulum.command` (macOS) yeni `.venv-ocr` ortamını kurar. Poppler ayrıca gereklidir.
