@@ -1,0 +1,26 @@
+# Her bilgisayarda yeniden kurulan Python ortamları ve geçici dosyalar.
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+tmp/
+output/
+.env
+.env.*
+*.pem
+*.key
+
+# SQLite'ın geçici günlükleri veritabanı yedeği değildir.
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Büyük, yeniden indirilebilir model ve paket önbellekleri.
+lab_models/*
+!lab_models/paddlex/
+lab_models/paddlex/*
+!lab_models/paddlex/official_models/
+**/.cache/
+*.partial

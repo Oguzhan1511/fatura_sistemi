@@ -1,0 +1,996 @@
+{
+  "summary": {
+    "mode": "stored_initial_readings",
+    "documents": 7,
+    "matching_fields": 144,
+    "scored_fields": 146,
+    "fully_matching_documents": 5,
+    "independent_holdout": false,
+    "unscored_review_documents": 1,
+    "selection_warning": "Yalnızca onaylı kayıtlar puanlanır; başarısız/incelemedeki belgeler bu skora dahil değildir.",
+    "reference": "Kullanıcı onaylı kayıtlar; bağımsız elle doğrulama garantisi değildir."
+  },
+  "documents": [
+    {
+      "id": "2b69d733870b4df1ae80c41afc2c6b39",
+      "filename": "CamScanner 14.11.2026 09.34.pdf",
+      "supplier_group": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+      "sha256": "865bf1a1de7570309fe8ce2112bd256a98890493ba2118d8603709c20fdb6d7f",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 5.853,
+        "process_peak_rss_bytes": 74285056
+      },
+      "error": null,
+      "all_fields_match": false,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+          "actual": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "S102026000000171",
+          "actual": "S102026000000171",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2024-03-05",
+          "actual": "2024-03-05",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "8000.00",
+          "actual": "8000.00",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "320.00",
+          "actual": "320.00",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "8320.00",
+          "actual": "8320.00",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "8320.00",
+          "actual": "8320.00",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "Özel Sigorta Entegrasyonu",
+          "actual": "Özel Sigorta Entegrasyonu",
+          "match": true
+        },
+        {
+          "field": "items.0.description",
+          "expected": "Ekinoks Entegrasyonu (Aylık)",
+          "actual": "Ekinoks Entegrasyonu (Aylık)",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "6400.00",
+          "actual": "6400.00",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "0.00",
+          "actual": "0.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "6400.00",
+          "actual": "6400.00",
+          "match": true
+        },
+        {
+          "field": "items.1.name",
+          "expected": "Satış ve Pazarlama Hizmet Bedeli",
+          "actual": "Satış ve Pazarlama Hizmet Bedeli",
+          "match": true
+        },
+        {
+          "field": "items.1.description",
+          "expected": ".... —. ids",
+          "actual": ".... —. ids",
+          "match": true
+        },
+        {
+          "field": "items.1.quantity",
+          "expected": "1",
+          "actual": null,
+          "match": false
+        },
+        {
+          "field": "items.1.unit_price",
+          "expected": "1600.00",
+          "actual": "1600.00",
+          "match": true
+        },
+        {
+          "field": "items.1.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.1.line_total",
+          "expected": "1600.00",
+          "actual": "1600.00",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 2,
+          "actual": 2,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "23cad0cab5514d8fb0b0664d1b5876ab",
+      "filename": "CamScanner 14.11.2026 09.41.pdf",
+      "supplier_group": "Bulut Klinik Teknoloji A.Ş.",
+      "sha256": "e7ff5e91f69a2722f79d3f4c13a3616ac82de9aba9e8114a25bee51abe3ae855",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 6.248,
+        "process_peak_rss_bytes": 74022912
+      },
+      "error": null,
+      "all_fields_match": true,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "Bulut Klinik Teknoloji A.Ş.",
+          "actual": "Bulut Klinik Teknoloji A.Ş.",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "BF12026000000020",
+          "actual": "BF12026000000020",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-19",
+          "actual": "2026-10-19",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "140000.00",
+          "actual": "140000.00",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "28000.00",
+          "actual": "28000.00",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "168000.00",
+          "actual": "168000.00",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "168000.00",
+          "actual": "168000.00",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "Bulut Klinik Karar Destek Platformu",
+          "actual": "Bulut Klinik Karar Destek Platformu",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.0.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "140000.00",
+          "actual": "140000.00",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "140000.00",
+          "actual": "140000.00",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 1,
+          "actual": 1,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "6863cdee57b54ed58a95c90575a13c0e",
+      "filename": "CamScanner 14.11.2026 09.42.pdf",
+      "supplier_group": "SİSTAŞ SAYISAL İLETİŞİM SAN. VE TİC, A.Ş,",
+      "sha256": "9d695b01dee279740b983c96c781931a051e7424568dc0a965b2437ca50efdc8",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 9.823,
+        "process_peak_rss_bytes": 158334976
+      },
+      "error": null,
+      "all_fields_match": true,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "SİSTAŞ SAYISAL İLETİŞİM SAN. VE TİC, A.Ş,",
+          "actual": "SİSTAŞ SAYISAL İLETİŞİM SAN. VE TİC, A.Ş,",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "URA2026000002035",
+          "actual": "URA2026000002035",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-19",
+          "actual": "2026-10-19",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "150168.60",
+          "actual": "150168.60",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "30033.72",
+          "actual": "30033.72",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "180202.32",
+          "actual": "180202.32",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "180202.32",
+          "actual": "180202.32",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "ALCATEL 8340 İÇ MEKAN BAZ İSTASYONU",
+          "actual": "ALCATEL 8340 İÇ MEKAN BAZ İSTASYONU",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "10",
+          "actual": "10",
+          "match": true
+        },
+        {
+          "field": "items.0.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "15016.86",
+          "actual": "15016.86",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "20",
+          "actual": "20",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "150168.60",
+          "actual": "150168.60",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 1,
+          "actual": 1,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "7ea6bcb484514552b68ce608ebd66fb9",
+      "filename": "CamScanner 14.11.2026 10.28.pdf",
+      "supplier_group": "BİLKUR BİLGİSAYAR SAN. VE TİC. LTD. ŞTİ.",
+      "sha256": "98f91a9c178bbaba3b7bcd6c77454a76762cfb57529a8f752471e5dd5975acbb",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 8.411,
+        "process_peak_rss_bytes": 160825344
+      },
+      "error": null,
+      "all_fields_match": true,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "BİLKUR BİLGİSAYAR SAN. VE TİC. LTD. ŞTİ.",
+          "actual": "BİLKUR BİLGİSAYAR SAN. VE TİC. LTD. ŞTİ.",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "BLK2026000009787",
+          "actual": "BLK2026000009787",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-09",
+          "actual": "2026-10-09",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "29926.00",
+          "actual": "29926.00",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "5985.20",
+          "actual": "5985.20",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "35911.20",
+          "actual": "35911.20",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "35911.20",
+          "actual": "35911.20",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "Argox D2-250 Barkod Yazıcı USB, USB Host",
+          "actual": "Argox D2-250 Barkod Yazıcı USB, USB Host",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "4.0",
+          "actual": "4.0",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "7481.5008",
+          "actual": "7481.5008",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "29926.00",
+          "actual": "29926.00",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 1,
+          "actual": 1,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "ba47902fae3c4bfcbfaa153925875661",
+      "filename": "CamScanner 14.11.2026 10.32.pdf",
+      "supplier_group": "LTS Bilişim Teknoloji Anonim Şirketi",
+      "sha256": "49596f38be26a000c9da4e39b6d126d50160d576a2c22360b866ed2e4b143c42",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 10.303,
+        "process_peak_rss_bytes": 173899776
+      },
+      "error": null,
+      "all_fields_match": true,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "LTS Bilişim Teknoloji Anonim Şirketi",
+          "actual": "LTS Bilişim Teknoloji Anonim Şirketi",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "LAS2026000001128",
+          "actual": "LAS2026000001128",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-15",
+          "actual": "2026-10-15",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "USD",
+          "actual": "USD",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "2800.00",
+          "actual": "2800.00",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "560.00",
+          "actual": "560.00",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "3360.00",
+          "actual": "3360.00",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "3360.00",
+          "actual": "3360.00",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "SEAGATE Exos? EnterPrise X18 12TB 7.2K 12G SAS 3.5\" Sunucu Harddisk (ST12000NM0043) 2MT203- 003",
+          "actual": "SEAGATE Exos? EnterPrise X18 12TB 7.2K 12G SAS 3.5\" Sunucu Harddisk (ST12000NM0043) 2MT203- 003",
+          "match": true
+        },
+        {
+          "field": "items.0.description",
+          "expected": "ST12000NM004)",
+          "actual": "ST12000NM004)",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "4",
+          "actual": "4",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "700",
+          "actual": "700",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "2800.00",
+          "actual": "2800.00",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 1,
+          "actual": 1,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "95423df51334458b894ae34cd88801a0",
+      "filename": "CamScanner 14.11.2026 10.32(1).pdf",
+      "supplier_group": "ÇİZGİ TELEKOMÜNİKASYON ANONİM ŞİRKETİ ÇİZGİ",
+      "sha256": "238b5c2f30cc9d2cdf6dc26d250963ccb121bd8f684faf554b51ea1de41f171a",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 11.262,
+        "process_peak_rss_bytes": 171294720
+      },
+      "error": null,
+      "all_fields_match": true,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "ÇİZGİ TELEKOMÜNİKASYON ANONİM ŞİRKETİ ÇİZGİ",
+          "actual": "ÇİZGİ TELEKOMÜNİKASYON ANONİM ŞİRKETİ ÇİZGİ",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "EFC2026000167422",
+          "actual": "EFC2026000167422",
+          "match": true
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-20",
+          "actual": "2026-10-20",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "2495.37",
+          "actual": "2495.37",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "499.07",
+          "actual": "499.07",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "2994.44",
+          "actual": "2994.44",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "2994.44",
+          "actual": "2994.44",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "Yeni .com.tr alan adı kaydı fthdyv com tr)",
+          "actual": "Yeni .com.tr alan adı kaydı fthdyv com tr)",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.0.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "73.92",
+          "actual": "73.92",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "73.92",
+          "actual": "73.92",
+          "match": true
+        },
+        {
+          "field": "items.1.name",
+          "expected": "Sınırsız Pro Hosting (thdy com tr)",
+          "actual": "Sınırsız Pro Hosting (thdy com tr)",
+          "match": true
+        },
+        {
+          "field": "items.1.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.1.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.1.unit_price",
+          "expected": "1778.10",
+          "actual": "1778.10",
+          "match": true
+        },
+        {
+          "field": "items.1.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.1.line_total",
+          "expected": "1778.10",
+          "actual": "1778.10",
+          "match": true
+        },
+        {
+          "field": "items.2.name",
+          "expected": "Yeni .com alan adı kaydı (theaglikdy cam)",
+          "actual": "Yeni .com alan adı kaydı (theaglikdy cam)",
+          "match": true
+        },
+        {
+          "field": "items.2.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.2.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.2.unit_price",
+          "expected": "148.24",
+          "actual": "148.24",
+          "match": true
+        },
+        {
+          "field": "items.2.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.2.line_total",
+          "expected": "148.24",
+          "actual": "148.24",
+          "match": true
+        },
+        {
+          "field": "items.3.name",
+          "expected": "Yeni .com alan adı kaydı (turkivesaalikdx.com”",
+          "actual": "Yeni .com alan adı kaydı (turkivesaalikdx.com”",
+          "match": true
+        },
+        {
+          "field": "items.3.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.3.unit",
+          "expected": "Adet",
+          "actual": "Adet",
+          "match": true
+        },
+        {
+          "field": "items.3.unit_price",
+          "expected": "495.11",
+          "actual": "495.11",
+          "match": true
+        },
+        {
+          "field": "items.3.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.3.line_total",
+          "expected": "495.11",
+          "actual": "495.11",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 4,
+          "actual": 4,
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "ce7a0650e4f747afa1b3c21d97e203f6",
+      "filename": "CamScanner 14.11.2026 10.33.pdf",
+      "supplier_group": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+      "sha256": "1d216425deb94ce4bd2aab30f22fce9640218f655c6e27645672f6e786a45cd3",
+      "elapsed_seconds": 0.001,
+      "metrics": {
+        "elapsed_seconds": 8.124,
+        "process_peak_rss_bytes": 73400320
+      },
+      "error": null,
+      "all_fields_match": false,
+      "checks": [
+        {
+          "field": "seller.name",
+          "expected": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+          "actual": "SİNERJİ BİLİŞİM DANIŞMANLIK TURİZM İTHALAT İHRACAT TİCARET LİMİTED ŞİRKETİ",
+          "match": true
+        },
+        {
+          "field": "invoice_number",
+          "expected": "S102026000001121",
+          "actual": "102026000001121",
+          "match": false
+        },
+        {
+          "field": "invoice_date",
+          "expected": "2026-10-20",
+          "actual": "2026-10-20",
+          "match": true
+        },
+        {
+          "field": "currency",
+          "expected": "TRY",
+          "actual": "TRY",
+          "match": true
+        },
+        {
+          "field": "totals.net",
+          "expected": "33000.00",
+          "actual": "33000.00",
+          "match": true
+        },
+        {
+          "field": "totals.vat",
+          "expected": "1320.00",
+          "actual": "1320.00",
+          "match": true
+        },
+        {
+          "field": "totals.gross",
+          "expected": "34320.00",
+          "actual": "34320.00",
+          "match": true
+        },
+        {
+          "field": "totals.payable",
+          "expected": "34320.00",
+          "actual": "34320.00",
+          "match": true
+        },
+        {
+          "field": "items.0.name",
+          "expected": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "actual": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "match": true
+        },
+        {
+          "field": "items.0.description",
+          "expected": "Radyoloji Görüntüleme Sistemi Gayri Maddi Hakka İsabet Eden Kısım",
+          "actual": "Radyoloji Görüntüleme Sistemi Gayri Maddi Hakka İsabet Eden Kısım",
+          "match": true
+        },
+        {
+          "field": "items.0.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.0.unit_price",
+          "expected": "11200.00",
+          "actual": "11200.00",
+          "match": true
+        },
+        {
+          "field": "items.0.vat_rate",
+          "expected": "0.00",
+          "actual": "0.00",
+          "match": true
+        },
+        {
+          "field": "items.0.line_total",
+          "expected": "11200.00",
+          "actual": "11200.00",
+          "match": true
+        },
+        {
+          "field": "items.1.name",
+          "expected": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "actual": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "match": true
+        },
+        {
+          "field": "items.1.description",
+          "expected": "Müşteri İlişkileri Yönetim Modülü Gayri Maddi Hakka İsabet Eden Kısım",
+          "actual": "Müşteri İlişkileri Yönetim Modülü Gayri Maddi Hakka İsabet Eden Kısım",
+          "match": true
+        },
+        {
+          "field": "items.1.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.1.unit_price",
+          "expected": "7600.00",
+          "actual": "7600.00",
+          "match": true
+        },
+        {
+          "field": "items.1.vat_rate",
+          "expected": "0.00",
+          "actual": "0.00",
+          "match": true
+        },
+        {
+          "field": "items.1.line_total",
+          "expected": "7600.00",
+          "actual": "7600.00",
+          "match": true
+        },
+        {
+          "field": "items.2.name",
+          "expected": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "actual": "079966-Hastane Bilgi Yönetim Sistemi Yazılımı",
+          "match": true
+        },
+        {
+          "field": "items.2.description",
+          "expected": "Bizmed Mobil Uygulama Tam sürüm (Aylık) Gayri Maddi Hakka İsabet Eden Kısım",
+          "actual": "Bizmed Mobil Uygulama Tam sürüm (Aylık) Gayri Maddi Hakka İsabet Eden Kısım",
+          "match": true
+        },
+        {
+          "field": "items.2.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.2.unit_price",
+          "expected": "7600.00",
+          "actual": "7600.00",
+          "match": true
+        },
+        {
+          "field": "items.2.vat_rate",
+          "expected": "0.00",
+          "actual": "0.00",
+          "match": true
+        },
+        {
+          "field": "items.2.line_total",
+          "expected": "7600.00",
+          "actual": "7600.00",
+          "match": true
+        },
+        {
+          "field": "items.3.name",
+          "expected": "Satış ve Pazarlama Hizmet Bedeli",
+          "actual": "Satış ve Pazarlama Hizmet Bedeli",
+          "match": true
+        },
+        {
+          "field": "items.3.description",
+          "expected": "Satış ve Pazarlama Organizasyon payına isabet eden kisim",
+          "actual": "Satış ve Pazarlama Organizasyon payına isabet eden kisim",
+          "match": true
+        },
+        {
+          "field": "items.3.quantity",
+          "expected": "1",
+          "actual": "1",
+          "match": true
+        },
+        {
+          "field": "items.3.unit_price",
+          "expected": "6600.00",
+          "actual": "6600.00",
+          "match": true
+        },
+        {
+          "field": "items.3.vat_rate",
+          "expected": "20.00",
+          "actual": "20.00",
+          "match": true
+        },
+        {
+          "field": "items.3.line_total",
+          "expected": "6600.00",
+          "actual": "6600.00",
+          "match": true
+        },
+        {
+          "field": "item_count",
+          "expected": 4,
+          "actual": 4,
+          "match": true
+        }
+      ]
+    }
+  ]
+}

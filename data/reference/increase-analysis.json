@@ -1,0 +1,602 @@
+{
+  "source_name": "2024-2026 Detay.xls",
+  "sheet": "Zam Analizi",
+  "source_sha256": "7d4ec1ae1853f502fcfb7038e941e8d8b2b8d0317040e60f4b3fd398eb635d07",
+  "imported_date": "2026-11-17",
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "basis": "Excel başlangıcına, onaylanmış yeni faturaların yıl içindeki son genel tutarı eklenir.",
+  "rates_basis": "Kaynak oranlar korunur; yeni yıllık bedelden etkilenen oranlar yeniden hesaplanır.",
+  "rows": [
+    {
+      "id": "excel-row-2",
+      "source_row": 2,
+      "description": "PACS Hizmeti",
+      "amounts": {
+        "2024": "17500.0",
+        "2025": "25000.0",
+        "2026": "34320.0"
+      },
+      "rates": {
+        "2024": "0.0",
+        "2025": "0.4286",
+        "2026": "0.3728"
+      },
+      "total_increase": "0.9611",
+      "invoice_count": 38,
+      "unit_price": null,
+      "service_type": "Aylık",
+      "single_date": null,
+      "note": "Zamlar Ocak ayında yapılmıştır",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-3",
+      "source_row": 3,
+      "description": "Protein TSS",
+      "amounts": {
+        "2024": "2500.0",
+        "2025": "4600.0",
+        "2026": "6708.0"
+      },
+      "rates": {
+        "2024": "0.84",
+        "2025": "0.4583",
+        "2026": null
+      },
+      "total_increase": "1.6832",
+      "invoice_count": 31,
+      "unit_price": null,
+      "service_type": "Bitti",
+      "single_date": null,
+      "note": "Eylül aylarında zam yapılmıştır.",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-4",
+      "source_row": 4,
+      "description": "Özel Sigorta",
+      "amounts": {
+        "2024": "3750.0",
+        "2025": "6000.0",
+        "2026": "8320.0"
+      },
+      "rates": {
+        "2024": "0.84",
+        "2025": "0.4583",
+        "2026": null
+      },
+      "total_increase": "1.2187",
+      "invoice_count": 35,
+      "unit_price": null,
+      "service_type": "Bitti",
+      "single_date": null,
+      "note": "Zamlar 2024'te Temmuz 2025'te Eylülde. 2026 Ekim ayında bitti",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-5",
+      "source_row": 5,
+      "description": "Ekinoks",
+      "amounts": {
+        "2024": null,
+        "2025": "8320.0",
+        "2026": "8320.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 10,
+      "unit_price": null,
+      "service_type": "Bitti",
+      "single_date": null,
+      "note": "2025 Kasım ayında başladı. 2026 Ekim ayında bitti",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-6",
+      "source_row": 6,
+      "description": "Özel Sigorta Kapsamlı",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "17800.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Aylık",
+      "single_date": null,
+      "note": "Protein TSS ve Ekinoks eklendi.",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-7",
+      "source_row": 7,
+      "description": "Bakım Destek",
+      "amounts": {
+        "2024": "370000.0",
+        "2025": "542800.0",
+        "2026": "728000.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": "0.467",
+        "2026": "0.3412"
+      },
+      "total_increase": "0.9676",
+      "invoice_count": 3,
+      "unit_price": null,
+      "service_type": "Yıllık",
+      "single_date": null,
+      "note": "Her yıl 1 adet alınmış",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-8",
+      "source_row": 8,
+      "description": "Adam/Gün Hizmeti",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "593600.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 5,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": null,
+      "note": "53 gün hizmet alınmış. 1 adam/gün 11.200TL",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-9",
+      "source_row": 9,
+      "description": "20 Yatak Hizmeti",
+      "amounts": {
+        "2024": null,
+        "2025": "33000.0",
+        "2026": "35200.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": "0.0667",
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 6,
+      "unit_price": "1760.0",
+      "service_type": "Aylık (Düzensiz)",
+      "single_date": null,
+      "note": "2025 Kasım ayında zam yapılmış",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-10",
+      "source_row": 10,
+      "description": "30 Lisans Satın Alma Bedeli",
+      "amounts": {
+        "2024": null,
+        "2025": "187200.0",
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2025-11-27",
+      "note": "2025 Kasım ayında alınmış",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-11",
+      "source_row": 11,
+      "description": "Bizmed HBYS Programı Kullanıcı Lisansı",
+      "amounts": {
+        "2024": null,
+        "2025": "48800.0",
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": "3240.0",
+      "service_type": "Bir Kere",
+      "single_date": "2024-01-15",
+      "note": "20 kullanıcı için. (1 kullanıcı 3.240 TL)",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-12",
+      "source_row": 12,
+      "description": "Dış Laboratuvar Entegrasyonu (Ahenk Patoloji)",
+      "amounts": {
+        "2024": "40706.0",
+        "2025": null,
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2024-08-20",
+      "note": "Patoloji ve Laboratuvar için alınmış",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-13",
+      "source_row": 13,
+      "description": "DiaPro Across Auto System Octo-M",
+      "amounts": {
+        "2024": "16000.0",
+        "2025": null,
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2024-05-24",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-14",
+      "source_row": 14,
+      "description": "Elcom Patoloji Entegrasyonu",
+      "amounts": {
+        "2024": null,
+        "2025": "74880.0",
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2025-11-04",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-15",
+      "source_row": 15,
+      "description": "İngenico Pos Cihazı Entegrasyonu",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "216000.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": "8000.0",
+      "service_type": "Bir Kere",
+      "single_date": "2026-04-13",
+      "note": "27 adet cihaz. ( 1 adeti 8.000 TL)",
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-16",
+      "source_row": 16,
+      "description": "Oracle Sunucu Kurulumu",
+      "amounts": {
+        "2024": "15000.0",
+        "2025": null,
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2024-10-28",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-17",
+      "source_row": 17,
+      "description": "RapidLab 1265",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "33280.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2026-11-06",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-18",
+      "source_row": 18,
+      "description": "SMS Entegrasyonu",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "39520.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2026-03-16",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-19",
+      "source_row": 19,
+      "description": "Symetricx",
+      "amounts": {
+        "2024": null,
+        "2025": "80000.0",
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2025-07-18",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-20",
+      "source_row": 20,
+      "description": "Web Portal - Dış Merkez Sonuç Portalı",
+      "amounts": {
+        "2024": null,
+        "2025": null,
+        "2026": "130000.0"
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2026-06-16",
+      "note": null,
+      "institution": "Sinerji"
+    },
+    {
+      "id": "excel-row-21",
+      "source_row": 21,
+      "description": "XN-L entegrasyonu",
+      "amounts": {
+        "2024": "18000.0",
+        "2025": null,
+        "2026": null
+      },
+      "rates": {
+        "2024": null,
+        "2025": null,
+        "2026": null
+      },
+      "total_increase": null,
+      "invoice_count": 1,
+      "unit_price": null,
+      "service_type": "Bir Kere",
+      "single_date": "2024-08-12",
+      "note": null,
+      "institution": "Sinerji"
+    }
+  ],
+  "institution_source": "Kullanıcının 17 Kasım 2026 tarihli beyanı: mevcut tüm hizmetler Sinerji kurumuna bağlıdır.",
+  "baseline_invoice_numbers": [
+    "SI02024000000031",
+    "SI02024000000032",
+    "SI02024000000077",
+    "SI02024000000106",
+    "SI02024000000107",
+    "SI02024000000142",
+    "SI02024000000156",
+    "SI02024000000268",
+    "SI02024000000296",
+    "SI02024000000324",
+    "SI02024000000493",
+    "SI02024000000495",
+    "SI02024000000524",
+    "SI02024000000613",
+    "SI02024000000669",
+    "SI02024000000671",
+    "SI02024000000688",
+    "SI02024000000842",
+    "SI02024000000877",
+    "SI02024000000905",
+    "SI02024000000947",
+    "SI02024000001004",
+    "SI02024000001005",
+    "SI02024000001099",
+    "SI02024000001270",
+    "SI02024000001271",
+    "SI02024000001384",
+    "SI02024000001385",
+    "SI02024000001391",
+    "SI02025000000013",
+    "SI02025000000014",
+    "SI02025000000015",
+    "SI02025000000016",
+    "SI02025000000050",
+    "SI02025000000152",
+    "SI02025000000153",
+    "SI02025000000231",
+    "SI02025000000232",
+    "SI02025000000233",
+    "SI02025000000347",
+    "SI02025000000560",
+    "SI02025000000561",
+    "SI02025000000582",
+    "SI02025000000735",
+    "SI02025000000736",
+    "SI02025000000756",
+    "SI02025000000855",
+    "SI02025000000955",
+    "SI02025000000956",
+    "SI02025000000971",
+    "SI02025000001123",
+    "SI02025000001217",
+    "SI02025000001220",
+    "SI02025000001221",
+    "SI02025000001318",
+    "SI02025000001319",
+    "SI02025000001322",
+    "SI02025000001335",
+    "SI02025000001423",
+    "SI02025000001424",
+    "SI02025000001447",
+    "SI02025000001512",
+    "SI02025000001513",
+    "SI02025000001514",
+    "SI02025000001545",
+    "SI02026000000021",
+    "SI02026000000168",
+    "SI02026000000171",
+    "SI02026000000180",
+    "SI02026000000201",
+    "SI02026000000216",
+    "SI02026000000236",
+    "SI02026000000259",
+    "SI02026000000289",
+    "SI02026000000290",
+    "SI02026000000291",
+    "SI02026000000292",
+    "SI02026000000426",
+    "SI02026000000469",
+    "SI02026000000470",
+    "SI02026000000471",
+    "SI02026000000472",
+    "SI02026000000598",
+    "SI02026000000599",
+    "SI02026000000623",
+    "SI02026000000698",
+    "SI02026000000699",
+    "SI02026000000700",
+    "SI02026000000701",
+    "SI02026000000800",
+    "SI02026000000853",
+    "SI02026000000909",
+    "SI02026000000910",
+    "SI02026000000927",
+    "SI02026000001121",
+    "SI02026000001122",
+    "SI02026000001123",
+    "SI02026000001124",
+    "SI02026000001272",
+    "SI02026000001300",
+    "SI02026000001303",
+    "SI02026000001304",
+    "SI02026000001305",
+    "SI12025000000018",
+    "SI12025000000019",
+    "SI12025000000038",
+    "SI12025000000141",
+    "SI12025000000142",
+    "SI12025000000143",
+    "SI12026000000043",
+    "SI12026000000044",
+    "SI12026000000058",
+    "SI12026000000172",
+    "SI12026000000199",
+    "SI12026000000229",
+    "SI12026000000282",
+    "SI12026000000283",
+    "SI22025000000161",
+    "SI22025000000162",
+    "SI22025000000174",
+    "SI22026000000058",
+    "SI22026000000059",
+    "SI22026000000060",
+    "SI22026000000061",
+    "SI32024000000034",
+    "SI32024000000079",
+    "SI32025000000044",
+    "SI32025000000045",
+    "SI32025000000063",
+    "SI32025000000142",
+    "SI32025000000143",
+    "SI32025000000163",
+    "SI32026000000080",
+    "SI32026000000081",
+    "SI32026000000082",
+    "SI42024000000014",
+    "SI42024000000016",
+    "SI42024000000043",
+    "SI42024000000113",
+    "SI42024000000114",
+    "SI72026000000080",
+    "SI72026000000081",
+    "SI72026000000082"
+  ],
+  "baseline_as_of": "2026-11-09"
+}
