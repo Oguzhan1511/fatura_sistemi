@@ -8,27 +8,23 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     FATURA_OCR_PYTHON=/usr/local/bin/python \
     PADDLE_PDX_CACHE_HOME=/app/lab_models/paddlex \
     PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True \
-    OMP_NUM_THREADS=2 \
+    OMP_NUM_THREADS=1 \
+    FATURA_OCR_CPU_THREADS=1 \
     TZ=Europe/Istanbul
 
 WORKDIR /app
 # Poppler PDF'leri render eder; Tesseract küçük miktar hücrelerinde yardımcıdır.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     poppler-utils tesseract-ocr tesseract-ocr-tur tesseract-ocr-eng \
-    libgl1 libglib2.0-0 libgomp1 curl ca-certificates \
+    libgl1 libglib2.0-0 libgomp1 curl ca-certificates tzdata \
     && rm -rf /var/lib/apt/lists/*
 COPY requirements-paddle.txt requirements-production.txt ./
 RUN python -m pip install -r requirements-production.txt \
     && python -c "import paddle, paddleocr, waitress, pdfplumber"
-# Saat dilimi verisi ağır Python katmanından sonra ayrı kurulabilir.
-RUN apt-get update && apt-get install -y --no-install-recommends tzdata \
-    && rm -rf /var/lib/apt/lists/*
 COPY --chown=10001:10001 . .
 RUN groupadd --gid 10001 fatura && useradd --uid 10001 --gid 10001 --create-home fatura \
     && mkdir -p /data /backups \
     && chown -R 10001:10001 /data /backups /app/lab_models
-# Çalışma anında OCR tek iş kuyruğunda, tek OpenMP iş parçacığıyla yürür.
-ENV OMP_NUM_THREADS=1 FATURA_OCR_CPU_THREADS=1
 USER 10001:10001
 EXPOSE 8765
 HEALTHCHECK --interval=30s --timeout=5s --start-period=120s --retries=3 \
