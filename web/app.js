@@ -635,6 +635,34 @@ function renderUpload() {
   });
 }
 
+// Çok sayfalı belgeler, kullanıcı düzeni seçmeden OCR kuyruğuna alınmaz.
+function choosePdfLayout(pageCount) {
+  return new Promise((resolve) => {
+    const dialog = document.createElement('dialog');
+    dialog.className = 'service-dialog';
+    dialog.innerHTML = /* HTML */ `<h2>PDF ${pageCount} sayfa içeriyor</h2>
+      <p>Bu sayfalar nasıl okunmalı?</p>
+      <div class="pdf-layout-options">
+        <button class="btn btn-primary" data-layout="pages">Her sayfa ayrı fatura</button>
+        <button class="btn btn-light" data-layout="single">Tek fatura, birden fazla sayfa</button>
+        <button class="btn btn-text" data-layout="cancel">Vazgeç</button>
+      </div>`;
+    let choice = null;
+    dialog.querySelectorAll('[data-layout]').forEach((button) => {
+      button.onclick = () => {
+        choice = button.dataset.layout === 'cancel' ? null : button.dataset.layout;
+        dialog.close();
+      };
+    });
+    dialog.addEventListener('close', () => {
+      dialog.remove();
+      resolve(choice);
+    }, {once: true});
+    document.body.append(dialog);
+    dialog.showModal();
+  });
+}
+
 async function upload(file) {
   if (state.uploading) return;
   if (file.size > 25 * 1024 * 1024) {
@@ -650,8 +678,16 @@ async function upload(file) {
   state.uploading = true;
   toast('Belgeniz yükleniyor…');
   try {
-    const mode = state.splitPages ? '&split=pages' : '';
-    const doc = await api(`/api/uploads?name=${encodeURIComponent(file.name)}${mode}`, {
+    const inspection = await api('/api/uploads/inspect', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/octet-stream' },
+      body: file,
+    });
+    const mode = inspection.page_count === 1
+      ? 'single'
+      : state.splitPages ? 'pages' : await choosePdfLayout(inspection.page_count);
+    if (!mode) return;
+    const doc = await api(`/api/uploads?name=${encodeURIComponent(file.name)}&split=${mode}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/octet-stream' },
       body: file,
