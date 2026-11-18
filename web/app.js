@@ -559,7 +559,7 @@ function renderUpload() {
         <div class="section-kicker">BELGENİZİ SEÇİN</div>
         <label class="pdf-split-option">
           <input type="checkbox" id="split-pdf-pages" ${state.splitPages ? 'checked' : ''} />
-          <span><strong>Her sayfa ayrı fatura</strong>
+          <span><strong>Toplu fatura</strong>
             <small>Örneğin 4 sayfalık PDF → 4 ayrı fatura. Sayfalar sırayla okunur.</small>
           </span>
         </label>
@@ -643,7 +643,7 @@ function choosePdfLayout(pageCount) {
     dialog.innerHTML = /* HTML */ `<h2>PDF ${pageCount} sayfa içeriyor</h2>
       <p>Bu sayfalar nasıl okunmalı?</p>
       <div class="pdf-layout-options">
-        <button class="btn btn-primary" data-layout="pages">Her sayfa ayrı fatura</button>
+        <button class="btn btn-primary" data-layout="pages">Toplu fatura</button>
         <button class="btn btn-light" data-layout="single">Tek fatura, birden fazla sayfa</button>
         <button class="btn btn-text" data-layout="cancel">Vazgeç</button>
       </div>`;
@@ -825,7 +825,7 @@ function renderReview() {
     </div>
     ${renderBatchNavigation(d)}
     ${d.mime === 'application/pdf' && !d.batch_id && !processing
-      ? `<div class="pdf-split-toolbar"><button class="btn btn-light" data-action="split-invoice-pages">${icon('files')} Her sayfayı ayrı fatura olarak oku</button></div>`
+      ? `<div class="pdf-split-toolbar"><button class="btn btn-light" data-action="split-invoice-pages">${icon('files')} Toplu fatura olarak oku</button></div>`
       : ''}
     <div class="review-grid">
       <aside class="card preview-panel">
@@ -2767,7 +2767,7 @@ function renderDuplicateInvoice(doc) {
       <p>Numara okunduktan sonra sistemdeki faturalarla karşılaştırıldı.</p>
       <div class="approval-actions">
         ${doc.mime === 'application/pdf' && !doc.batch_id
-          ? '<button class="btn btn-light" data-action="split-invoice-pages">Her sayfayı ayrı fatura olarak oku</button>'
+          ? '<button class="btn btn-light" data-action="split-invoice-pages">Toplu fatura olarak oku</button>'
           : ''}
         <a class="btn btn-primary" href="#document/${encodeURIComponent(doc.duplicate_of)}"
           >Mevcut faturayı aç</a
